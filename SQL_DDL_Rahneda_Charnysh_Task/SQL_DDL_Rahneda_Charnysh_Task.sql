@@ -58,6 +58,8 @@ create table Climb(
     mountain_id int not null ,
     start_date date not null ,
     end_date date not null,
+    created_at timestamp with time zone default current_timestamp,
+    updated_at timestamp with time zone default current_timestamp,
 
     constraint fk_climber_id
                   foreign key (climber_id)
