@@ -94,3 +94,30 @@ create table Climb_Equipment(
                             foreign key (equipment_id)
                             references Equipment(equipment_id)
 );
+
+insert into Ares (name) values ('Rocky Mountains'), ('Himalayas'), ('Andes');
+
+insert into Country (name) values ('United States'), ('Nepal'), ('Argentina');
+
+insert into Difficulty_Level (level) values ('Easy'), ('Moderate'), ('Difficult');
+
+insert into Equipment (name, description) values
+                                              ('Harness', 'Safety equipment for climbing'),
+                                              ('Rope', 'Essential for climbing and belaying'),
+                                              ('Helmet', 'Protects head during climbing accidents');
+insert into Climber (name, address) values
+                                        ('John Doe', '123 Main St, Anytown'),
+                                        ('Jane Smith', '456 Elm St, Othertown'),
+                                        ('Mike Johnson', '789 Maple St, Thistown');
+
+insert into Mountain (name, country_id, area_id) values
+                                                     ('Mount Everest', 2, 2),
+                                                     ('Denali', 1, 1),
+                                                     ('Aconcagua', 3, 3);
+
+insert into Climb_Type (climber_id, mountain_id) values (1, 1), (2, 2), (3, 3);
+
+insert into Climb (climber_id, mountain_id, start_date, end_date) values
+                                                                      (1, 1, '2024-05-01', '2024-05-10'),
+                                                                      (2, 2, '2024-06-01', '2024-06-15'),
+                                                                      (3, 3, '2024-07-01', '2024-07-20');
