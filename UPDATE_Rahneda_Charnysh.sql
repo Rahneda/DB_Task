@@ -1,5 +1,5 @@
 UPDATE film
-SET rental_duration = 21, -- 3 weeks
+SET rental_duration = 21, 
     rental_rate = 9.99
 WHERE title = '3 Body Problem';
 
